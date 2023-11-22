@@ -1,0 +1,107 @@
+#skills-cover {
+  width: 100%;
+  height: 30vh;
+  border-radius: 21px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#arrow {
+  transition: opacity 0.5s ease;
+  /* Анимация исчезновения */
+}
+
+@media (max-width: 767px) {
+  #main-photo {
+    background-image: url(img/photo-sm.jpg);
+  }
+
+  .gradient-custom {
+    /* fallback for old browsers */
+    background: #4acd37;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right,
+        rgba(111, 197, 98, 255),
+        rgba(95, 192, 124, 255));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right,
+        rgba(111, 197, 98, 255),
+        rgba(95, 192, 124, 255));
+  }
+}
+
+@media (min-width: 768px) {
+  #main-photo {
+    background-image: url(img/my_photo.jpg);
+  }
+
+  .gradient-custom {
+    /* fallback for old browsers */
+    background: #4acd37;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right,
+        rgba(128, 203, 74, 255),
+        rgba(78, 190, 154, 255));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right,
+        rgba(128, 203, 74, 255),
+        rgba(78, 190, 154, 255));
+  }
+}
+
+
+.my-bcgr {
+  background-color: #7fca49;
+}
+
+.my-text {
+  color: #7fca49;
+}
+
+.navbar-margin {
+  margin-left: 280px;
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:active {
+  background-color: #7fca49 !important;
+  color: #ffff !important;
+}
+
+.btn-outline-success {
+  border-color: #7fca49 !important;
+  color: #ffff !important;
+}
+
+.fa-shake {
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  /* Указываем количество повторений анимации */
+}
+
+.gradient-animation {
+  background: linear-gradient(300deg, #7fca49, #4ebe9a, #AABA1F);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+

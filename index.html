@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anton Moroz</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/464aed323d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md sticky-top gradient-animation text-body-emphasis">
+        <a class="navbar-brand mx-3" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav my-2" style="margin-left: auto;"> <!-- Добавлен класс ml-auto -->
+                <!-- <li class="nav-item">
+                    <a href="#" class="nav-link">Projects</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link btn btn-outline-success">Contact me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Photo section-->
+    <div class="masthead" id="main-photo" style="
+        background-size: cover;
+        background-attachment: fixed;
+      ">
+        <div class="container text-body-emphasis" style="height: 75vh">
+            <h1 class="display-1" style="font-family: yellowtail">Anton Moroz</h1>
+            <span class="subheading lead px-6">my professional journey</span>
+        </div>
+    </div>
+    <!--Arrow-->
+    <div class="container my-4" id="arrow">
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-arrow-down fa-beat fa-5x"></i>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('scroll', function () {
+            var element = document.getElementById('arrow');
+
+            if (element) {
+                if (window.scrollY > 100) { // Например, при прокрутке на 100px
+                    element.style.opacity = '0'; // Изменяем прозрачность на 0, чтобы элемент исчез
+                } else {
+                    element.style.opacity = '1'; // Иначе, если прокрутка назад, возвращаем обратно видимость
+                }
+            }
+        });
+    </script>
+    <!--Work experience section-->
+    <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="sticky-top text-center" style="top: 10px;">Work Experience</h2>
+        <hr />
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fa-solid fa-satellite-dish" style="color: #ffffff"></i>
+                </div>
+                <div>
+                    <h4 class="fs-6 my-text">Jul 2023 – Present</h4>
+                    <h3 class="fs-2 text-body-emphasis">
+                        Fluorescence Detector Coordinator
+                    </h3>
+                    <h4 class="fs-6 my-text">Pierre Auger Observatory, Argentina</h4>
+
+                    <ul>
+                        <li>
+                            Engaged in data collection and analysis for ultra-high-energy
+                            cosmic ray research
+                        </li>
+                        <li>Performed detector calibration</li>
+                        <li>
+                            Conducted staff training for Fluorescence Detector data
+                            acquisition
+                        </li>
+                        <li>Supervised on-site and remote data-taking shifts</li>
+                        <li>Reported operational status to collaboration</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fa-solid fa-atom" style="color: #ffffff"></i>
+                </div>
+                <div>
+                    <h4 class="fs-6 my-text">Nov 2021 - Aug 2023</h4>
+                    <h3 class="fs-2 text-body-emphasis">Engineer Researcher</h3>
+                    <h4 class="fs-6 my-text">
+                        Saint Petersburg State University, Russia
+                    </h4>
+                    <ul>
+                        <li>
+                            Conducted accelerator-driven neutron source target development
+                            and optimization
+                        </li>
+                        <li>Developed a target cooling system</li>
+                        <li>Organized weekly scientiﬁc seminars</li>
+                        <li>Authored scientiﬁc publications</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fa-solid fa-radiation" style="color: #ffffff"></i>
+                </div>
+                <div>
+                    <h4 class="fs-6 my-text">Sep 2020 - Jan 2023</h4>
+                    <h3 class="fs-2 text-body-emphasis">Assistant Researcher</h3>
+                    <h4 class="fs-6 my-text">
+                        Petersburg Nuclear Physics Institute - National Research Center
+                        KI, Russia
+                    </h4>
+                    <ul>
+                        <li>Conducted neutron and gamma transport calculations</li>
+                        <li>
+                            Conducted shielding calculations for neutron scattering
+                            instruments and beamlines
+                        </li>
+                        <li>
+                            Performed reactor radiation heating calculations with own models
+                        </li>
+                        <li>
+                            Developed a correlation spectrometer model for an experiment on
+                            studying weak interaction through polarized ultra-cold neutron
+                            decay
+                        </li>
+                        <li>
+                            Calculated neutronics for leading physics institutes in Russia
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Education section-->
+    <div class="container">
+        <h2 class="sticky-top text-center" style="top: 10px;">Education</h2>
+        <hr />
+        <div class="container my-5">
+            <div class="p-2 text-center bg-body-tertiary rounded-3">
+                <img src="img\spsu_logo.png" class="bi mt-4 mb-3" width="100" height="100" />
+                <h5 class="text-muted">
+                    <i class="fa-solid fa-location-dot"></i> Saint Petersburg State
+                    University
+                </h5>
+                <h6 class="text-muted">
+                    <i class="fa-regular fa-calendar"></i> Sep 2020 – Jun 2022
+                </h6>
+                <h1 class="text-body-emphasis">
+                    MSc in Neutron and Synchrotron Physics
+                </h1>
+                <p class="col-lg-8 mx-auto fs-5 text-muted">Graduated with honors</p>
+            </div>
+        </div>
+        <div class="container my-5 py-5">
+            <div class="p-2 text-center bg-body-tertiary rounded-3">
+                <img src="img\fefu_logo.png" class="bi mt-4 mb-3" width="100" height="100" />
+                <h5 class="text-muted">
+                    <i class="fa-solid fa-location-dot"></i> Far Eastern Federal
+                    University
+                </h5>
+                <h6 class="text-muted">
+                    <i class="fa-regular fa-calendar"></i> Sep 2016 – Jul 2020
+                </h6>
+                <h1 class="text-body-emphasis">
+                    BSc in Nuclear Physics and Technologies
+                </h1>
+                <p class="col-lg-8 mx-auto fs-5 text-muted">Graduated with honors</p>
+            </div>
+        </div>
+    </div>
+    <!--Skills section-->
+    <div class="container-fluid">
+        <h2 class="sticky-top text-center" style="top: 10px;">Skills</h2>
+        <hr class="mb-5"/>
+
+
+        <div class="my-3 py-3 text-center">
+            <h2 class="display-5 mb-5">Particle transport & Python programming</h2>
+        </div>
+        <div id="skills-cover" class="masthead shadow-lg mx-auto py-0 my-0" style="
+            background-image: url('img/linkedin-cover.png');
+          ">
+        </div>
+        <div class="row">
+            <div class="d-flex flex-wrap gap-2 justify-content-center py-5 mb-5">
+                <h5><span class="badge text-bg-secondary">Neutron scattering</span></h5>
+                <h5><span class="badge text-bg-secondary">PHITS</span></h5>
+                <h5><span class="badge text-bg-secondary">Python</span></h5>
+                <h5>
+                    <span class="badge text-bg-secondary">Monte Carlo simulation</span>
+                </h5>
+                <h5><span class="badge text-bg-secondary">Shielding heating</span></h5>
+                <h5><span class="badge text-bg-secondary">Radiation heating</span></h5>
+                <h5>
+                    <span class="badge text-bg-secondary">Thermal calculations</span>
+                </h5>
+                <h5><span class="badge text-bg-secondary">Experimentation</span></h5>
+            </div>
+        </div>
+    </div>
+    <!--Honors and awards-->
+    <div class="container">
+        <h2 class="sticky-top text-center" style="top: 10px;">Honors and awards</h2>
+        <hr class="pb-5" />
+        <div class="row row-cols-lg-2 g-4 py-5">
+            <div class="col d-flex align-items-start">
+                <i class="fa-solid fa-trophy fa-shake fa-3x px-5 text-body-emphasis" id="trophy1"></i>
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                        Government research grant
+                    </h3>
+                    <p>
+                        Ministry of Science and Higher Education of the Russian Federation
+                    </p>
+                    <p class="text-body-emphasis">
+                        Accelerator-based neutron source development
+                    </p>
+                    <p>Oct 2021</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <i class="fa-solid fa-trophy fa-shake fa-3x px-5 text-body-emphasis" id="trophy2"></i>
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                        Government research grant
+                    </h3>
+                    <p>Russian Foundation for Basic Research</p>
+                    <p class="text-body-emphasis">
+                        Development of experiment on measuring the ratio of axial-vector
+                        weak interaction constants
+                    </p>
+                    <p>Sep 2020</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Publications and conference experience -->
+    <div class="container my-3 pb-3">
+        <h2 class="sticky-top text-center" style="top: 10px;">
+            Publications & conference experience
+        </h2>
+        <hr />
+
+        <h4 class="my-text my-5"><i class="fa-solid fa-file-contract"></i> Research articles</h4>
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">A. Moroz and N. Kovalenko, “Choice of the target material for a compact neutron
+                        sourceat a proton energy of 20–100
+                        MeV”</div>
+                    Journal of Surface Investigation: X-ray, Synchrotron and Neutron Techniques, vol. 17, no. 4, pp.
+                    799–803, 2023
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">A. Serebrov, O. Zherebtsov, G. Klyushnikov, et al., “New possibilities of
+                        measuring the ratio of axial-vector weak in-
+                        teraction constants”</div>
+                    Journal of Surface Investigation X-ray Synchrotron and Neutron Techniques, vol. 17, no. 1, pp.
+                    116–129, 2023
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">P. Shvets, P. Prokopovich, E. Fatyanov, et al., “Rotating water-cooled
+                        beryllium target for a compact neutron source”</div>
+                    Journal of Surface Investigation: X-ray, Synchrotron and Neutron Techniques, vol. 17, no. 4, pp.
+                    792–798, 2023
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold"> Y. Titarenko, V. Batyaev, V. Blandinskiy, et al., “Determination of the
+                        neutron ﬂux induced by irradiation of a beryllium
+                        target with 21.3-MeV protons”</div>
+                    Physics of Atomic Nuclei, vol. 85, no. 6, pp. 520–527, 2023
+                </div>
+            </li>
+        </ol>
+
+        <h4 class="my-text my-5"><i class="fa-solid fa-id-card-clip"></i> Conference proceedings</h4>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold"> A. Moroz, N. Kovalenko, and S. Grigoriev, “Target cooling options for daria
+                        compact neutron source”</div>
+                    Journal of Neutron Research, pp. 1–6, 2022
+                </div>
+            </li>
+        </ul>
+
+        <h4 class="my-text my-5"><i class="fa-solid fa-people-group"></i> Conference experience</h4>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"> 2023 - Pierre Auger collaboration meeting - Malargue, Argentina. Speaker</li>
+            <li class="list-group-item"> 2022 - UCANS9 international symposium - Online. Speaker + poster</li>
+            <li class="list-group-item"> 2022 - Numerical modelling of neutron experimental instruments - Peterhof, Ru.
+                Instructor</li>
+            <li class="list-group-item"> 2022 - Advanced PHITS international tutorial - Online. Participant</li>
+            <li class="list-group-item"> 2022 - 4th Meeting of the ’DARIA Project: Compact Neutron Sources in Russia -
+                Nizhny Novgorod, Ru. Speaker</li>
+            <li class="list-group-item"> 2022 - Compact Neutron Sources - Kaliningrad, Ru. Speaker</li>
+            <li class="list-group-item"> 2021 - III Youth Conference ’DARIA Project: Compact Neutron Sources in Russia’
+                - Peterhof, Ru. Speaker</li>
+            <li class="list-group-item"> 2020 - IX School on Polarized Neutron Physics ’PNP-2020’ - Gatchina, Ru.
+                Speaker</li>
+        </ul>
+    </div>
+    <!-- Certifications -->
+    <div class="container">
+        <h2 class="sticky-top text-center" style="top: 10px;">
+            Certifications
+        </h2>
+        <hr />
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                    <i class="fa-solid fa-explosion fa-2x my-text"></i>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Numerical simulation of neutron experimental instruments</h3>
+                <p>190370560 - Saint Petersburg State University, 2022</p>
+            </div>
+            <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                    <i class="fa-solid fa-laptop-code fa-2x my-text"></i>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Python basics</h3>
+                <p>Skillbox academy, 2023</p>
+            </div>
+            <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                    <i class="fa-solid fa-computer fa-2x my-text"></i>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Intro to machine learning</h3>
+                <p>Kaggle, 2023</p>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex inline-flex align-items-center justify-content-center">
+        <a href="contact.html" class="btn gradient-animation" style="width: 50%;">Contact me!</a>
+    </div>
+
+</body>
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top text-white">
+    <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-white">© 2023 Anton Moroz</span>
+    </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+
+</html>
