@@ -14,12 +14,13 @@
 #main-photo {
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 767px) {
   #main-photo {
     background-image: url(img/photo-sm.jpg);
-    background-size: cover;
+    background-size: contain;
   }
 
 }
@@ -63,7 +64,7 @@
 .gradient-animation {
   background: linear-gradient(300deg, #7fca49, #4ebe9a, #AABA1F);
   background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+  animation: gradient-animation 10s ease infinite;
 
 }
 
